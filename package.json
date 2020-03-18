@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node src/index.js",
-        "pretest": "eslint --ignore-path .gitignore .",
+        "pretest": "echo 'Mocktest'",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
