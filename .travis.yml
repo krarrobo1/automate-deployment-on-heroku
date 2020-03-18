@@ -1,10 +1,17 @@
 languaje: node_js
 node_js:
-- 7 
+- 7
 - 8
 - 10
-before_install: 
+before_install:
 - npm install -g npm
 script:
 - npm install
 - npm run pretest
+deploy:
+  provider: heroku
+  api_key:
+    secure: IY2+WXeRGe/6BV5ElUleQuksIsBoabc7hGfVq7FlhSRKFdDIH+be+nVTJFo9C/hrZLd0xCLhava85UKoY9rXovfzTfRnjlNzzwi12nNVwdzTV6ZYx6ITWUNC4QsORcWrOx8wF1KhTOGW6TdhHJQ3RznCP/9js9juswgBHE0PuyqKNNNLdKB9US10J156pj+DE3hwR0br4E/BuAgRJ9tLqU84SIrDUdl2U07vWyqcZNNvTZiCWd3oJH5gWjgxu0+tOj6/KQdDd28SMhdb+yqjda+yYYJOrkpWZ1LNKug/650KPNUSrd4rFAMPJXvndTp+OdLin5X+t2o7Yfa07iaBVXRiO12fRNZxx6gVNt0x9FEXjq08blN9bpNXEEFI672stHs+D014UYH7oP1LhPC6XdGYA3ocWQJITxTIpHmQNbrG1LibxCzJXJudla5AtHXAYNkuP6SJUJWX48eTN7sYZtfXKREWIhEK+QpRrfqrqumvuGslSwU5oPEfjS1lLP08iekGUGqaWo2tjNOye6tEhZgAXlZxVKzaIBm/EEstzadqYCMJTRJDzRXgcRyn2876Zs7bKDYI3JP5gqAG8l4MdifQL9OcbWxC1+T0JDGb9lqMumW9uHt+4R8HeKKv+tkKo3OBVxLvSMKNHA9PrQSRpclPk+MAhFdjjthvfaQXTaE=
+  app: automate-heroku-20
+  on:
+    repo: krarrobo1/automate-deployment-on-heroku
